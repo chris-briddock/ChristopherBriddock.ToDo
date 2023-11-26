@@ -7,7 +7,7 @@ This is a simple React To-Do application that demonstrates the use of React, Rea
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Testing](#testing)
-- [License](#license)
+- [Licence](#licence)
 
 ## Getting Started
 
@@ -21,13 +21,13 @@ You will need Node.js and npm (Node Package Manager) installed on your machine. 
 
 Clone the repository to your local machine:
 
-```
+``` code
 git clone https://github.com/chris-briddock/ChristopherBriddock.ToDo.git
 ```
 
 Change into the directory:
 
-```
+``` code
 cd React\to-do
 ```
 
@@ -67,6 +67,6 @@ To run the end-to-end tests, first start the development server (if it is not al
 npm run test:e2e
 ```
 
-## License
+## Licence
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT Licence - see the [LICENCE](LICENCE) file for details.
