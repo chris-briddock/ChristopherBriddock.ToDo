@@ -10,6 +10,10 @@ WORKDIR /usr/app/to-do
 
 RUN npm ci
 
+RUN npm run test:unit
+
+RUN npm run test:e2e
+
 RUN npm run build
 
 EXPOSE 3000
