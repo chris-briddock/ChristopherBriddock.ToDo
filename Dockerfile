@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:lts-bookworm
 
 RUN npm i -g serve
 
@@ -9,6 +9,18 @@ COPY . /usr/app/
 WORKDIR /usr/app/to-do
 
 RUN npm ci
+
+RUN npx playwright install-deps
+
+RUN npx playwright install chrome
+
+RUN npx playwright install msedge
+
+RUN npx playwright install firefox
+
+RUN npx playwright install webkit
+
+RUN npx playwright install chromium
 
 RUN npm run test:unit
 
