@@ -55,18 +55,19 @@ const Todo: React.FC = () => {
                             Clear
                         </Button>
                     </Form>
-                    <ListGroup className="mt-3" >
+                    <ListGroup className="mt-3">
                         {tasks.map((task, index) => (
-                            <ListGroup.Item key={index}  data-testid="todo-link">
-                                {task}
+                            <div key={index}>
+                                <ListGroup.Item data-testid="todo-link" contentEditable="true">
+                                    {task}
+                                </ListGroup.Item>
                                 <Button
                                     variant="danger"
-                                    className="float-right, m-2"
-                                    onClick={() => removeTask(index)}
-                                >
+                                    className="float-right m-2"
+                                    onClick={() => removeTask(index)}>
                                     Remove
                                 </Button>
-                            </ListGroup.Item>
+                            </div>
                         ))}
                     </ListGroup>
                 </Col>

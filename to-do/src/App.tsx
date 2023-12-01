@@ -6,15 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App: React.FC = () => {
   return(
     <>
-    <BrowserRouter>
-      <Header />
-        <Routes>
-          {Routing.map(({ path, element }, key) => (
-            <Route key={key} path={path} element={element} />
-          ))}
-        </Routes>
-        {/* <Footer /> */}
-        </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+          <Routes>
+            {Routing.map(({ path, element }, key) => (
+              <Route key={key} path={path} element={element} />
+            ))}
+          </Routes>
+          {/* <Footer /> */}
+      </BrowserRouter>
     </>
   );
 }
