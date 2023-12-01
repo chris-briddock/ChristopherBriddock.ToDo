@@ -29,13 +29,13 @@ git clone https://github.com/chris-briddock/ChristopherBriddock.ToDo.git
 Change into the directory:
 
 ``` code
-cd React\to-do
+cd *todo\to-do
 ```
 
 Install the dependencies:
 
 ``` code
-npm install
+npm i
 ```
 
 Start the development server:

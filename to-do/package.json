@@ -9,16 +9,13 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test:unit": "jest --coverage",
-    "test:e2e": "npx playwright test",
-    "deploy:production": "npm run build && surge dist"
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "gh-pages": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
-    "surge": "^0.23.1"
+    "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",
